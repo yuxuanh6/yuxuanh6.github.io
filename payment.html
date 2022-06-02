@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <header class="nav-bar">
+        <div class="logo-container">
+            <a class="title d-block" href="/home.html">Yandas</a>
+            <label class="subtitle">Discover you music</label>
+        </div>
+        <div class="mobible-logo">
+            <img src="icons/arrow-left.png" class="img-fluid" >
+        </div>
+        <div class="icons-container">
+            <div class="icon">
+                <img src="icons/search.png" />
+            </div>
+            <div class="icon">
+                <a href="/cart.html">
+                    <img src="icons/bag.png" />
+                </a>
+            </div>
+            <div class="icon">
+                <img src="icons/account.png" />
+            </div>
+            <div class="icon">
+                <img src="icons/menu.png" />
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="breadcrumb">
+            <div class="crumb">
+                <a href="/home.html">Home</a>
+            </div>
+            <div class="crumb icon">
+                <img src="icons/arrow-right.png" />
+            </div>
+            <div class="crumb">
+                <a href="/productlist.html">Fork</a>
+            </div>
+            <div class="crumb icon">
+                <img src="icons/arrow-right.png" />
+            </div>
+            <div class="crumb">
+                <a href="/product.html">Stentor Student 1 Violin Outfit</a>
+            </div>
+            <div class="crumb icon">
+                <img src="icons/arrow-right.png" />
+            </div>
+            <div class="crumb">
+                My Cart
+            </div>
+        </div>
+        <div class="cart-title">Payment</div>
+        <div class="row">
+            <div class="icon border p-1">
+                <img src="icons/paypal.png" />
+            </div>
+            <div class="icon border p-1">
+                <img src="icons/apple-pay.png" />
+            </div>
+            <div class="icon border p-1">
+                <img src="icons/google_pay.png" />
+            </div>
+        </div>
+        <div class="address-container">
+            <div class="header">
+                <div class="title">Address</div>
+                <div class="add-address-btn" id="add-address-btn">Add Address</div>
+            </div>
+            <div class="info-region">
+                <div>You don't have address added.</div>
+                <div>Please click "Add Address".</div>
+            </div>
+            <div class="address-pane hide" id="add-address-pane">
+                <div class="header">
+                    <div class="title">Add Address</div>
+                    <div class="cancle-btn" id="cancle-address-btn">Cancel</div>
+                </div>
+                <form class="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="First Name: " />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Last Name: " />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Phone Number: " />
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="">Country:</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="">State:</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="">City:</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Zip code: " />
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Address: "></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Contact email: " />
+                    </div>
+                    <div class="form-group w-50 m-auto">
+                        <button type="button" class="save-btn w-100 border-0">Save</button>
+                    </div>
+                </form>
+            </div>
+            <div class="title">1 Item</div>
+        </div>
+        <div class="cart-item">
+            <div class="img-container">
+                <img class="img-fluid" src="img/detail1.png" />
+            </div>
+            <div class="info-container">
+                <div class="good-title">
+                    Stentor Student 1 Violin Outfit, Full Size
+                </div>
+                <div class="bottom">
+                    <div class="color-container">
+                    </div>
+                    <div class="quantity-container">
+                        <div class="reduce-btn" id="reduce-btn">-</div>
+                        <div class="quantity" id="quantity">1</div>
+                        <div class="increase-btn" id="increase-btn">+</div>
+                    </div>
+                    <div class="price">$159.75</div>
+                </div>
+            </div>
+        </div>
+        <div class="delivery-container">
+            <div class="header">
+                <div class="title">Delivery</div>
+                <div class="change-btn">Change</div>
+            </div>
+            <div class="info-region">
+                <div class="info">
+                    <div class="title">Express Shipping</div>
+                    <div class="remark">Estimated 2-3 Days</div>
+                </div>
+                <div class="price">$5.43</div>
+            </div>
+            <div class="column-info">
+                <div class="column">Shipping fee</div>
+                <div class="info">$5.43</div>
+            </div>
+            <div class="column-info">
+                <div class="column">Discount 10%</div>
+                <div class="info">-16.52</div>
+            </div>
+        </div>
+        <div class="checkout-container">
+            <div class="total-price-info">
+                Total <span class="total-price">$148.66</span>
+            </div>
+            <div class="checkout-btn">
+                <a href="/payment_success.html" class="text-white">Checkout</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="title">Yandas Music</div>
+        <div class="subtitle">Your Hometown Music Store Champion!</div>
+        <div class="links-container">
+            <div class="row">
+                <div class="icon border p-1">
+                    <img src="icons/paypal.png" />
+                </div>
+                <div class="icon border p-1">
+                    <img src="icons/apple-pay.png" />
+                </div>
+                <div class="icon border p-1">
+                    <img src="icons/google_pay.png" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="icon">
+                    <img src="icons/index_footer_right_2.png" />
+                </div>
+                <div class="icon">
+                    <img src="icons/camera.png" />
+                </div>
+                <div class="icon">
+                    <img src="icons/index_footer_right_3.png" />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/cart.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>

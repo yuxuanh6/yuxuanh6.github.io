@@ -1,0 +1,40 @@
+.main .info-region {
+    margin: 5rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main .info-region .icon {
+    width: 200px;
+    height: 200px;
+}
+
+.main .info-region .icon .title {
+    color: #2D2D2D;
+    font-size: 2.5vw;
+}
+
+.main .description {
+    color: #8F92A1;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.main .btn-container {
+    margin: 3rem auto;
+    width: 20%;
+}
+
+.main .btn-container a {
+    display: block;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    padding: .8rem 0px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.5vw;
+}
